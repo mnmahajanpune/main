@@ -34,9 +34,9 @@ public class UserController {
         return userRepository.findAll();
     }
     
-//    @GetMapping("/{id}")
-//    public Optional<User> getAllUsers(@PathVariable Long id) {
-//        return userRepository.findById(id);
-//    }
+    @GetMapping("/{id}")
+    public Optional<User> getAllUsers(@PathVariable Long id) {
+        return userRepository.findById(id);
+    }
 
 }
